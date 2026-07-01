@@ -42,11 +42,20 @@ export async function generateMetadata({
       siteName: siteConfig.name,
       title: t('titleDefault'),
       description: t('description'),
+      images: [
+        {
+          url: `${siteConfig.url}/og/home-${locale}.png`,
+          width: 1200,
+          height: 630,
+          type: 'image/png',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: t('titleDefault'),
       description: t('description'),
+      images: [`${siteConfig.url}/og/home-${locale}.png`],
     },
   };
 }

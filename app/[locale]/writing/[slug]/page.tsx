@@ -9,6 +9,7 @@ import { mdxComponents } from '@/components/mdx';
 import { JsonLd } from '@/components/JsonLd';
 import { articleLd, breadcrumbLd } from '@/lib/structured-data';
 import { formatDate } from '@/lib/format';
+import { siteConfig } from '@/site.config';
 
 export function generateStaticParams() {
   return getPostSlugs().map((slug) => ({ slug }));
@@ -40,6 +41,20 @@ export async function generateMetadata({
       title: meta.title,
       description: meta.summary,
       publishedTime: meta.date,
+      images: [
+        {
+          url: `${siteConfig.url}/og/${slug}-${loc}.png`,
+          width: 1200,
+          height: 630,
+          type: 'image/png',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: meta.title,
+      description: meta.summary,
+      images: [`${siteConfig.url}/og/${slug}-${loc}.png`],
     },
   };
 }

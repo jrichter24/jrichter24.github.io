@@ -3,6 +3,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { locales, isLocale, defaultLocale } from '@/i18n/routing';
 import { getAllPosts } from '@/lib/posts';
 import WritingIndex from '@/components/writing/WritingIndex';
+import { siteConfig } from '@/site.config';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -27,6 +28,14 @@ export async function generateMetadata({
       url: `/${locale}/writing/`,
       title: t('metaTitle'),
       description: t('metaDescription'),
+      images: [
+        {
+          url: `${siteConfig.url}/og/home-${locale}.png`,
+          width: 1200,
+          height: 630,
+          type: 'image/png',
+        },
+      ],
     },
   };
 }

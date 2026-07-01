@@ -8,6 +8,9 @@
 *.tsbuildinfo
 next-env.d.ts
 
+# ─── generated OG images (built by `prebuild`, copied into ./out) ─
+/public/og/
+
 # ─── testing / coverage ─────────────────────────────────────────
 /coverage
 
