@@ -40,8 +40,12 @@ npx serve out
 
 ## Deploy
 
-`./out` is plain static files — drop it on any bucket, Vercel (static), Netlify,
-or GitHub Pages. A `.nojekyll` file is included so GitHub Pages serves `_next/`.
+This repo auto-deploys to **GitHub Pages** as a user site served at the root —
+`https://jrichter24.github.io/` — via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+on every push to `main` (it builds, `touch out/.nojekyll`, and publishes `./out`).
+
+`./out` is also plain static files — drop it on any bucket, Vercel (static), or
+Netlify. A `.nojekyll` file is included so hosts serve `_next/`.
 
 > OG images are emitted by Next as extension-less files (e.g. `out/en/opengraph-image`,
 > valid PNG bytes). Vercel/Next and most CDNs serve these as `image/png`; on a bare
@@ -51,7 +55,7 @@ Two build-time environment variables:
 
 | Variable                | When to set it                                                    | Example            |
 | ----------------------- | ----------------------------------------------------------------- | ------------------ |
-| `NEXT_PUBLIC_SITE_URL`  | Your production origin (canonical URLs, OG, sitemap, JSON-LD).    | `https://jens.dev` |
+| `NEXT_PUBLIC_SITE_URL`  | Production origin (canonical URLs, OG, sitemap, JSON-LD).         | `https://jrichter24.github.io` |
 | `NEXT_PUBLIC_BASE_PATH` | Only for a GitHub Pages **project** site served under a sub-path. | `/my-repo`         |
 
 ```bash
@@ -59,7 +63,7 @@ Two build-time environment variables:
 NEXT_PUBLIC_SITE_URL=https://user.github.io/my-repo NEXT_PUBLIC_BASE_PATH=/my-repo npm run build
 ```
 
-> Default site URL is a placeholder (`https://jens.dev`) — set `NEXT_PUBLIC_SITE_URL` before a real deploy.
+> The default site URL is `https://jrichter24.github.io` (the Pages workflow sets `NEXT_PUBLIC_SITE_URL` explicitly). Override it only to deploy under a different origin.
 
 ## Project structure
 

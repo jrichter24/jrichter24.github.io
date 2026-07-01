@@ -1,8 +1,8 @@
 // Centralized, non-secret site facts. Keep in sync with the brand-voice skill.
 export const siteConfig = {
-  // TODO(jens): confirm the production domain. Used for canonical URLs, OG
-  // images, sitemap and JSON-LD. Override at build with NEXT_PUBLIC_SITE_URL.
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://jens.dev').replace(/\/$/, ''),
+  // Production origin — GitHub Pages user site, served at root. Used for canonical
+  // URLs, OG images, sitemap and JSON-LD. Override at build with NEXT_PUBLIC_SITE_URL.
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://jrichter24.github.io').replace(/\/$/, ''),
   name: 'Dr. Jens Richter',
   shortName: 'Jens Richter',
   github: 'https://github.com/jrichter24',

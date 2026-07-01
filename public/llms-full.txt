@@ -60,13 +60,13 @@ constraint solving, Java, Spring WebFlux, REST APIs.
 ## Writing
 A bilingual (English + German) section for essays, tutorials and case studies on
 optimization, photonics and engineering.
-- English index: https://jens.dev/en/writing/
-- German index: https://jens.dev/de/writing/
+- English index: https://jrichter24.github.io/en/writing/
+- German index: https://jrichter24.github.io/de/writing/
 
 ## Identity and links
 - Name: Dr. Jens Richter (Dr.-Ing.)
 - Origin: born in Dresden, raised in Leverkusen; lives in Eschweiler near Aachen
-- Website: https://jens.dev
+- Website: https://jrichter24.github.io
 - LinkedIn: https://www.linkedin.com/in/li-jens-richter/
 - GitHub: https://github.com/jrichter24
 - ResearchGate: https://www.researchgate.net/profile/Jens-Richter-3

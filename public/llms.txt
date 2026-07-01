@@ -33,11 +33,11 @@ optimal tours. He holds a PhD from RWTH Aachen in silicon photonics.
   https://jrichter24.github.io/moldqueen/ · repo https://github.com/jrichter24/moldqueen
 
 ## Writing
-- English: https://jens.dev/en/writing/
-- German: https://jens.dev/de/writing/
+- English: https://jrichter24.github.io/en/writing/
+- German: https://jrichter24.github.io/de/writing/
 
 ## Links
-- Site: https://jens.dev
+- Site: https://jrichter24.github.io
 - LinkedIn: https://www.linkedin.com/in/li-jens-richter/
 - GitHub: https://github.com/jrichter24
 - ResearchGate: https://www.researchgate.net/profile/Jens-Richter-3

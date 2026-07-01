@@ -3,8 +3,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
-// For GitHub Pages *project* sites (user.github.io/repo), set
-// NEXT_PUBLIC_BASE_PATH=/repo at build time. Root domains / Vercel: leave unset.
+// Deploys as a GitHub Pages *user* site (jrichter24.github.io), served at the
+// root — no base path. (For a *project* site under user.github.io/repo, set
+// NEXT_PUBLIC_BASE_PATH=/repo at build; root domains / Vercel: leave unset.)
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 const nextConfig: NextConfig = {
