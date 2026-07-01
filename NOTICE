@@ -1,0 +1,39 @@
+# NOTICE — what the MIT license does and does NOT cover
+
+This repository is dual-status: the **structure is open (MIT)**, the **personal
+content and media are not**.
+
+## ✅ Covered by the MIT LICENSE (free to reuse)
+
+The website *structure and tooling* — i.e. the reusable scaffolding:
+
+- Source code: components, pages, styles, config, build setup (Next.js, Tailwind).
+- The Claude Code **agents** (`.claude/agents/`).
+- The Claude Code **skills** as scaffolding (`.claude/skills/`), specifically the
+  design-system, i18n-conventions, mdx-post, static-deploy, seo-llm skills and the
+  `brand-voice/SKILL.example.md` **template**.
+
+Use it as a template for your own site. Attribution appreciated, not required.
+
+## ⛔ NOT covered — © 2026 Jens Richter, All Rights Reserved
+
+You may **not** copy, reuse, redistribute, or create derivatives of:
+
+- **Images & illustrations** — the hero portrait/artwork, `me_abstract_areas.png`,
+  the favicon, and any generated Open Graph images derived from that artwork.
+  These depict a real person and are licensed art. No reuse.
+- **Documents** — the PhD thesis, diploma thesis, LinkedIn printout, CV data, and
+  any PDFs. (The thesis is officially published by RWTH Aachen; see
+  https://publications.rwth-aachen.de/record/749969.) These live in
+  `temp_assets/` and are gitignored — they are not part of the public repo.
+- **Personal content / copy** — the biographical and project text throughout the
+  site (`messages/*.json` prose, the About/Work/Research narrative), the personal
+  facts in `brand-voice/SKILL.md` (gitignored, not published), and the specific
+  `Person`/structured-data values (name, profiles, history).
+
+If you fork this to build your own site: keep the structure, **replace all of the
+above with your own name, art, documents, and words.** Copy
+`brand-voice/SKILL.example.md` → `SKILL.md` and fill in your own facts.
+
+Trademarks, brand/project names (e.g. "toPPT", "Jonas & Barney"), and third-party
+assets remain the property of their respective owners.

@@ -1,0 +1,48 @@
+# ─── dependencies ───────────────────────────────────────────────
+/node_modules
+
+# ─── next.js / build output ─────────────────────────────────────
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── testing / coverage ─────────────────────────────────────────
+/coverage
+
+# ─── env & secrets ──────────────────────────────────────────────
+# ignore all env files EXCEPT the committed example
+.env
+.env.*
+!.env.example
+*.pem
+
+# ─── deploy / hosting ───────────────────────────────────────────
+.vercel
+
+# ─── Claude Code: keep shared config, ignore local + private ────
+.claude/settings.local.json
+# personal brand-voice facts stay local; the committed template is SKILL.example.md
+.claude/skills/brand-voice/SKILL.md
+# auditor's backlog — uncomment to keep private:
+# WORKBOARD.md
+
+# ─── private source inputs (NOT part of the public repo) ────────
+# raw art + PDFs (thesis, diploma, LinkedIn printout) — inputs, not output
+/temp_assets/
+
+# ─── internal build briefs / notes (contain private bio details) ─
+PROMPT.md
+CORRECTIONS*.md
+GITIGNORE-AUDIT.md
+notes.txt
+
+# ─── OS / editor cruft ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.shared.json

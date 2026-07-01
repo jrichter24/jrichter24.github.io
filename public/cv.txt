@@ -1,0 +1,43 @@
+Dr. Jens Richter (Dr.-Ing.)
+A Physicist in Mind, Developer by Heart, Engineer by Passion.
+
+From:          born Dresden, raised Leverkusen -- lives Eschweiler near Aachen
+LinkedIn:      https://www.linkedin.com/in/li-jens-richter/
+GitHub:        https://github.com/jrichter24
+ResearchGate:  https://www.researchgate.net/profile/Jens-Richter-3
+
+-- EXPERIENCE ---------------------------------------------------
+CEO                             DNA Evolutions GmbH   2026-present
+Co-CEO                          DNA Evolutions GmbH   2024-2026
+Partner                         DNA Evolutions GmbH   2020-2024
+Senior Java Software Engineer   DNA Evolutions GmbH   2017-present
+PhD Researcher                  RWTH Aachen           2011-2017
+
+-- EDUCATION ----------------------------------------------------
+Dr.-Ing., Electrical Engineering   RWTH Aachen   2018
+Diplom, Physics                    RWTH Aachen
+
+-- RESEARCH -----------------------------------------------------
+Thesis: "Ultra-high-Q inverted silica microtoroid resonators
+monolithically integrated into a silicon photonics platform."
+Official record: https://publications.rwth-aachen.de/record/749969
+Topics: silicon photonics, ultra-high-Q microresonators,
+optical frequency combs, optical characterization.
+
+-- WORK ---------------------------------------------------------
+DNA Evolutions GmbH -- JOpt, a Java route/tour optimization engine.
+Turns messy real-world logistics into feasible, optimal plans.
+
+-- PROJECTS (all personal) -------------------------------------
+toPPT             MATLAB -> PowerPoint generator (archived)
+                  https://github.com/jrichter24/toPPT
+jonas-barney.com  A self-published children's coloring book,
+                  starring Jonas and the dog Barney
+                  https://www.jonas-barney.com/
+JonasBarneyPaint  A browser paint studio (color the pages or paint anything)
+                  https://paint.jonas-barney.com/
+moldqueen         Control building-block RC toys through one clean API
+                  https://jrichter24.github.io/moldqueen/
+
+-- COLOPHON -----------------------------------------------------
+You curled a CV. That's the good kind of curiosity.

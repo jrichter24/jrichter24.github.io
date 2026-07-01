@@ -1,0 +1,24 @@
+/* TEAM */
+  Human:    Dr. Jens Richter
+  Role:     A Physicist in Mind, Developer by Heart, Engineer by Passion.
+  From:     Dresden, Germany
+  Contact:  https://www.linkedin.com/in/li-jens-richter/
+  Code:     https://github.com/jrichter24
+
+/* WORK */
+  DNA Evolutions GmbH — JOpt, a Java route/tour optimization engine.
+  Turns messy real-world logistics into feasible, optimal plans.
+
+/* PAST LIVES */
+  PhD (Dr.-Ing.), RWTH Aachen, 2018 — silicon photonics,
+  ultra-high-Q microresonators, and making light go in circles.
+
+/* SITE */
+  Stack:     Next.js (static export), TypeScript, Tailwind CSS v4, next-intl
+  Languages: de, en
+  Design:    squares only, no blur shadows, four colors, lots of air
+  Standards: semantic HTML, WCAG, ~100 Lighthouse
+
+/* THANKS */
+  You read humans.txt. That's the good kind of curiosity.
+  (There's more where this came from: /llms.txt)

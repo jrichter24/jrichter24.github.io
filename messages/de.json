@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "titleDefault": "Dr. Jens Richter — Physiker, Entwickler, Ingenieur",
+    "titleTemplate": "%s · Dr. Jens Richter",
+    "description": "Dr. Jens Richter — CEO von DNA Evolutions und Ingenieur mit den Händen im Code. Ich baue JOpt, eine Java-Engine zur Routenoptimierung, und mache aus chaotischer Logistik machbare, optimale Pläne. Promotion in Silizium-Photonik, RWTH Aachen."
+  },
+  "nav": {
+    "brand": "Dr. Jens Richter",
+    "primaryAria": "Hauptnavigation",
+    "home": "Start",
+    "about": "Über mich",
+    "work": "Arbeit",
+    "research": "Forschung",
+    "projects": "Projekte",
+    "cv": "Lebenslauf",
+    "writing": "Blog",
+    "contact": "Kontakt",
+    "skipToContent": "Zum Inhalt springen",
+    "languageGroupAria": "Sprache",
+    "toDeAria": "Auf Deutsch anzeigen",
+    "toEnAria": "View in English"
+  },
+  "hero": {
+    "status": "200 OK",
+    "statusAria": "Status: 200 OK",
+    "tagline": "A Physicist in Mind, Developer by Heart, Engineer by Passion.",
+    "kicker": "// drei Türen. wähl eine.",
+    "imageAlt": "Illustriertes, geteiltes Porträt von Dr. Jens Richter: links rot, mit Glühbirne und Skizzen für kreative Projekte; rechts blau, mit DNA und Daten für die Technik; in der Mitte, warm gehalten, eine Familie, die gemeinsam einen Weg entlanggeht.",
+    "doorsNavAria": "Bereiche",
+    "doors": {
+      "workLabel": "Arbeit",
+      "workAria": "Zur Arbeit — DNA Evolutions und die Optimierungs-Engine JOpt",
+      "projectsLabel": "Projekte",
+      "projectsAria": "Zu Projekten — eigene und kreative Arbeiten",
+      "aboutLabel": "Über mich",
+      "aboutAria": "Zu Über mich — vom Physiker zum Ingenieur"
+    }
+  },
+  "about": {
+    "eyebrow": "// über mich",
+    "title": "Über mich",
+    "p1": "Ich bin geboren in Dresden. Aufgewachsen in Leverkusen. In Aachen habe ich Physik und Informatik studiert und in Elektrotechnik promoviert. Mein Thema: Licht, das in mikroskopisch kleinen Glasringen im Kreis läuft.",
+    "nowLabel": "Jetzt",
+    "now": "Ich lebe in Eschweiler bei Aachen, mit meiner Frau, meinem Sohn und unserem Hund.",
+    "goalLabel": "Ziel",
+    "goal": "Möglichst viele spannende Probleme lösen, unter der Bedingung, dass am Ende etwas Fertiges dabei rauskommt."
+  },
+  "work": {
+    "eyebrow": "// jetzt / arbeit",
+    "title": "Jetzt / Arbeit",
+    "lead": "Ich bin CEO von DNA Evolutions und arbeite immer noch mit Quellcode.",
+    "body": "Wir bauen JOpt, eine Engine zur Routen- und Tourenoptimierung, geschrieben in Java. Sie macht aus chaotischer Logistik der echten Welt (Fahrzeuge, Fahrer, Zeitfenster, Qualifikationen, harte Nebenbedingungen, Mehrtagesplanung) machbare, optimale Touren. Verfügbar nativ in Java und als Spring-WebFlux-REST-Service.",
+    "aside": "Irgendetwas muss entscheiden, wer wann wohin fährt, ohne die Regeln zu brechen. Dieses Etwas ist ein Solver. Und den baue ich.",
+    "companyLink": "DNA Evolutions",
+    "companyAria": "DNA Evolutions (öffnet in neuem Tab)",
+    "githubLabel": "GitHub",
+    "githubAria": "DNA Evolutions auf GitHub (öffnet in neuem Tab)",
+    "capabilitiesLabel": "Was sie kann",
+    "capabilities": [
+      "Vehicle Routing",
+      "Zeitfenster",
+      "Qualifikationen & Constraints",
+      "Mehrtagesplanung",
+      "natives Java",
+      "Spring WebFlux REST"
+    ]
+  },
+  "research": {
+    "eyebrow": "// forschung",
+    "title": "Forschung",
+    "lead": "Promotion — Dr.-Ing. in Elektrotechnik, RWTH Aachen, 2018.",
+    "plain": "Verständlich gesagt: Ich habe winzige Glasringe auf einem Silizium-Chip gebaut, die Licht einfangen und es millionenfach im Kreis laufen lassen — die Grundlage für sehr präzise optische Messungen und für optische Frequenzkämme, im Grunde Lineale aus Licht. Programmierung und Quantenphysik waren dabei meine täglichen Begleiter.",
+    "thesisLabelText": "Dissertation",
+    "thesisTitle": "Ultra-high-Q inverted silica microtoroid resonators monolithically integrated into a silicon photonics platform.",
+    "recordLink": "Offizieller Eintrag",
+    "recordAria": "Offizieller Eintrag der Dissertation an der RWTH Aachen (öffnet in neuem Tab)",
+    "thesisLink": "PDF (13 MB)",
+    "keywordsLabel": "Themen",
+    "keywords": [
+      "Silizium-Photonik",
+      "Ultra-high-Q-Mikroresonatoren",
+      "optische Frequenzkämme",
+      "optische Charakterisierung"
+    ]
+  },
+  "projects": {
+    "eyebrow": "// projekte",
+    "title": "Projekte",
+    "intro": "Neben der normalen Arbeit.",
+    "newTab": "öffnet in neuem Tab",
+    "linkLabels": {
+      "github": "GitHub",
+      "site": "Website",
+      "fileExchange": "File Exchange"
+    },
+    "items": {
+      "toppt": {
+        "name": "toPPT",
+        "summary": "Erzeugt aus MATLAB-Abbildungen und -Ergebnissen direkt PowerPoint-Folien.",
+        "meta": ["~6,7k Downloads · MATLAB File Exchange", "5,0★", "archiviert"]
+      },
+      "jonasBarney": {
+        "name": "jonas-barney.com",
+        "summary": "Ein selbstverlegtes Kinder-Malbuch mit meinem Sohn Jonas und unserem Hund Barney.",
+        "meta": []
+      },
+      "jonasBarneyPaint": {
+        "name": "JonasBarneyPaint",
+        "summary": "Ein Mal-Studio im Browser: die Jonas-&-Barney-Seiten am Bildschirm ausmalen oder einfach malen, was gerade Spaß macht.",
+        "meta": []
+      },
+      "moldqueen": {
+        "name": "moldqueen",
+        "summary": "Steuert RC-Spielzeug aus Bausteinen über eine einzige, saubere API.",
+        "meta": []
+      }
+    }
+  },
+  "cv": {
+    "eyebrow": "// lebenslauf",
+    "title": "Lebenslauf",
+    "lead": "Die Kurzfassung ist diese ganze Seite. Hier die strukturierte Version.",
+    "experienceTitle": "Beruf",
+    "educationTitle": "Ausbildung",
+    "colRole": "Rolle",
+    "colOrg": "Organisation",
+    "colPeriod": "Zeitraum",
+    "colQualification": "Abschluss",
+    "experience": [
+      { "role": "CEO", "org": "DNA", "period": "2026–heute" },
+      { "role": "Co-CEO", "org": "DNA", "period": "2024–2026" },
+      { "role": "Partner", "org": "DNA", "period": "2020–2024" },
+      { "role": "Senior Java Software Engineer", "org": "DNA", "period": "2017–heute" },
+      { "role": "Doktorand", "org": "RWTH", "period": "2011–2017" }
+    ],
+    "education": [
+      { "qualification": "Dr.-Ing., Elektrotechnik", "org": "RWTH", "period": "2018" },
+      { "qualification": "Diplom, Physik", "org": "RWTH", "period": "—" }
+    ],
+    "legend": "* DNA = DNA Evolutions GmbH · RWTH = RWTH Aachen University",
+    "curlIntro": "Oder, für die Terminal-Fraktion:",
+    "curlNote": "// reiner Text, curl-freundlich"
+  },
+  "contact": {
+    "eyebrow": "// kontakt",
+    "title": "Kontakt",
+    "lead": "Kein Formular, keine E-Mail-Sammelei. Nur echte Links.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "researchgate": "ResearchGate",
+    "linkedinAria": "Jens Richter auf LinkedIn (öffnet in neuem Tab)",
+    "githubAria": "Jens Richter auf GitHub (öffnet in neuem Tab)",
+    "researchgateAria": "Jens Richter auf ResearchGate (öffnet in neuem Tab)"
+  },
+  "writing": {
+    "eyebrow": "// blog",
+    "title": "Blog",
+    "intro": "Notizen zu Optimierung, Photonik und dem Bauen von Dingen. Gelegentlich ein Tutorial.",
+    "readPost": "Lesen",
+    "backToList": "Alle Beiträge",
+    "rss": "RSS",
+    "rssTitle": "Dr. Jens Richter — Blog",
+    "rssDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter.",
+    "empty": "Noch keine Beiträge. Die Warteschlange ist im Geiste nicht leer.",
+    "tagsLabel": "Themen",
+    "types": {
+      "tutorial": "Tutorial",
+      "essay": "Essay",
+      "case-study": "Fallstudie"
+    },
+    "metaTitle": "Blog",
+    "metaDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter — Optimierung, Photonik und Technik."
+  },
+  "footer": {
+    "joke": "Keine Cookies. Keine Tracker. Kein Newsletter. Nur HTML, das sich benimmt.",
+    "sourceNote": "// psst — der Quelltext ist kommentiert. Schau rein.",
+    "meta": "Next.js · statisch exportiert · {year}",
+    "humansLink": "humans.txt",
+    "backToTop": "Nach oben",
+    "rights": "© {year} Dr. Jens Richter"
+  },
+  "notFound": {
+    "status": "404",
+    "title": "Keine zulässige Lösung für diesen Pfad.",
+    "body": "Die angefragte URL liegt außerhalb des Lösungsraums. Zurück zum Start.",
+    "homeLink": "Zur Startseite"
+  }
+}

@@ -1,0 +1,46 @@
+# Dr. Jens Richter
+
+> A Physicist in Mind, Developer by Heart, Engineer by Passion. CEO of DNA Evolutions and a hands-on engineer who builds JOpt, a Java route-optimization engine.
+
+## About
+Dr. Jens Richter (Dr.-Ing.) was born in Dresden, raised in Leverkusen, and lives
+in Eschweiler near Aachen. A trained physicist, he now leads and builds
+route-optimization software — turning chaotic real-world logistics into feasible,
+optimal tours. He holds a PhD from RWTH Aachen in silicon photonics.
+
+## Work
+- **CEO of DNA Evolutions GmbH** (since 2026; Senior Java Engineer → Partner →
+  Co-CEO → CEO — and still writes the Java).
+- **JOpt**: a Java route/tour optimization engine. Handles vehicle routing, time
+  windows, skills, hard constraints and multi-day planning; delivered natively in
+  Java and as Spring WebFlux REST services.
+
+## Research
+- **PhD (Dr.-Ing. in Electrical Engineering), RWTH Aachen, 2018.** Thesis:
+  "Ultra-high-Q inverted silica microtoroid resonators monolithically integrated
+  into a silicon photonics platform." Official record:
+  https://publications.rwth-aachen.de/record/749969
+
+## Projects (all personal — besides the day job)
+- **toPPT** — MATLAB → PowerPoint generator (~6.7k downloads, archived):
+  https://github.com/jrichter24/toPPT
+- **jonas-barney.com** — a self-published children's coloring book featuring his
+  son Jonas and dog Barney: https://www.jonas-barney.com/
+- **JonasBarneyPaint** — a browser paint studio (color the Jonas & Barney pages
+  on screen, or paint anything): https://paint.jonas-barney.com/ ·
+  source https://github.com/jrichter24/miniPaint
+- **moldqueen** — control building-block RC toys through one clean API:
+  https://jrichter24.github.io/moldqueen/ · repo https://github.com/jrichter24/moldqueen
+
+## Writing
+- English: https://jens.dev/en/writing/
+- German: https://jens.dev/de/writing/
+
+## Links
+- Site: https://jens.dev
+- LinkedIn: https://www.linkedin.com/in/li-jens-richter/
+- GitHub: https://github.com/jrichter24
+- ResearchGate: https://www.researchgate.net/profile/Jens-Richter-3
+
+## Contact
+Via LinkedIn, GitHub, or ResearchGate (links above).
