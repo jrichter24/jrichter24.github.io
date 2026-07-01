@@ -25,6 +25,7 @@ export function personLd(locale: Locale) {
     givenName: 'Jens',
     familyName: 'Richter',
     honorificPrefix: 'Dr.-Ing.',
+    honorificSuffix: 'PhD',
     jobTitle: jobTitle[locale],
     description: description[locale],
     url: `${siteConfig.url}/${locale}/`,
@@ -49,7 +50,7 @@ export function personLd(locale: Locale) {
       'optical frequency combs',
       'quantum computing',
     ],
-    sameAs: [siteConfig.linkedin, siteConfig.github, siteConfig.researchgate],
+    sameAs: [siteConfig.linkedin, siteConfig.github, siteConfig.gitlab, siteConfig.researchgate],
   };
 }
 
@@ -131,7 +132,7 @@ export function websiteLd(locale: Locale) {
 
 /** Article / TechArticle for a post. */
 export function articleLd(meta: PostMeta, locale: Locale) {
-  const url = `${siteConfig.url}/${locale}/writing/${meta.slug}/`;
+  const url = `${siteConfig.url}/${locale}/misc/${meta.slug}/`;
   return {
     '@context': 'https://schema.org',
     '@type': meta.type === 'tutorial' ? 'TechArticle' : 'Article',
@@ -152,7 +153,7 @@ export function articleLd(meta: PostMeta, locale: Locale) {
 export function breadcrumbLd(
   meta: PostMeta,
   locale: Locale,
-  labels: { home: string; writing: string },
+  labels: { home: string; misc: string },
 ) {
   const item = (position: number, name: string, path: string) => ({
     '@type': 'ListItem',
@@ -165,8 +166,8 @@ export function breadcrumbLd(
     '@type': 'BreadcrumbList',
     itemListElement: [
       item(1, labels.home, `/${locale}/`),
-      item(2, labels.writing, `/${locale}/writing/`),
-      item(3, meta.title, `/${locale}/writing/${meta.slug}/`),
+      item(2, labels.misc, `/${locale}/misc/`),
+      item(3, meta.title, `/${locale}/misc/${meta.slug}/`),
     ],
   };
 }

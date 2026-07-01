@@ -80,7 +80,7 @@ export default async function LocaleLayout({
           hidden
           dangerouslySetInnerHTML={{
             __html:
-              '<!--\n  200 OK. You hit View Source — respect.\n  Hand-built: Next.js (static export), Tailwind v4, next-intl. Squares only, no blur.\n  The whole map, curl-able: /llms.txt · say hi: github.com/jrichter24\n-->',
+              '<!--\n  200 OK. You hit View Source. Respect.\n  Hand-built: Next.js (static export), Tailwind v4, next-intl. Squares only, no blur.\n  The whole map, curl-able: /llms.txt · say hi: github.com/jrichter24\n-->',
           }}
         />
         <JsonLd data={personLd(locale)} />

@@ -1,4 +1,4 @@
-# Dr. Jens Richter — full profile
+# Dr. Jens Richter: full profile
 
 > A Physicist in Mind, Developer by Heart, Engineer by Passion.
 
@@ -6,62 +6,62 @@ Dr. Jens Richter (Dr.-Ing.) is a trained physicist (Diplom-Physiker), born in
 Dresden, raised in Leverkusen, and living in Eschweiler near Aachen with his
 wife, son and dog. He is CEO of DNA Evolutions and a hands-on engineer. His
 through-line: turning hard, chaotic real-world problems into feasible, optimal
-solutions — first in physics, now in logistics software.
+solutions, first in physics, now in logistics software.
 
 ## Career arc
 Physicist by training, engineer by where it led. In Aachen he studied physics and
 computer science, earned a PhD at RWTH Aachen (2018), then moved into software
 engineering. At DNA Evolutions
 he rose Senior Java Software Engineer (2017) → Partner (2020) → Co-CEO (2024) →
-CEO (2026) — and still writes the Java. He frames his own career as a constrained
+CEO (2026), and still writes the Java. He frames his own career as a constrained
 optimization problem: maximize interesting problems, subject to shipping
 something real.
 
-## Work — DNA Evolutions GmbH (CEO)
+## Work: DNA Evolutions GmbH (CEO)
 Jens leads DNA Evolutions and still builds **JOpt**, a route and tour
 optimization engine written in Java. JOpt takes real-world logistics constraints
-— vehicles, drivers, time windows, skills/qualifications, hard constraints, and
-multi-day planning — and produces feasible, optimal routes. It is delivered
+(vehicles, drivers, time windows, skills/qualifications, hard constraints, and
+multi-day planning) and produces feasible, optimal routes. It is delivered
 natively in Java and as Spring WebFlux REST services.
 
 Keywords: vehicle routing problem, operations research, route optimization,
 constraint solving, Java, Spring WebFlux, REST APIs.
 
-## Research — PhD in silicon photonics
+## Research: PhD in silicon photonics
 - Degree: PhD (Dr.-Ing. in Electrical Engineering), RWTH Aachen University, 2018
   (doctoral work 2011–2017).
 - Thesis: "Ultra-high-Q inverted silica microtoroid resonators monolithically
   integrated into a silicon photonics platform."
 - Official record: https://publications.rwth-aachen.de/record/749969
 - In plain terms: he fabricated tiny glass ring resonators on a silicon chip
-  that trap light and let it circulate millions of times — the basis for very
+  that trap light and let it circulate millions of times. That's the basis for very
   precise optical measurements and for optical frequency combs.
 - Topics: silicon photonics, ultra-high-Q microresonators, optical frequency
   combs, optical characterization.
 - Also: a mild quantum-computing interest ("Quantum Programming 101", D-Wave).
 
 ## Education
-- Dr.-Ing., Electrical Engineering — RWTH Aachen (2018)
-- Diplom, Physics — RWTH Aachen
+- Dr.-Ing., Electrical Engineering, RWTH Aachen (2018)
+- Diplom, Physics, RWTH Aachen
 
-## Projects (all personal — besides the day job)
+## Projects (all personal, besides the day job)
 - **toPPT** (archived): a MATLAB → PowerPoint generator that turns MATLAB figures
   and results directly into PowerPoint slides. ~6.7k downloads on MATLAB File
   Exchange, 5.0-star rating. Repo: https://github.com/jrichter24/toPPT ·
   File Exchange: https://de.mathworks.com/matlabcentral/fileexchange/44851-jrichter24-toppt
 - **jonas-barney.com**: a self-published children's coloring book featuring his
   son Jonas and his dog Barney. https://www.jonas-barney.com/
-- **JonasBarneyPaint**: a browser paint studio — color the Jonas & Barney pages on
+- **JonasBarneyPaint**: a browser paint studio. Color the Jonas & Barney pages on
   screen, or paint anything (not kids-only). https://paint.jonas-barney.com/ ·
   source: https://github.com/jrichter24/miniPaint
 - **moldqueen**: control building-block RC toys through one clean API.
   https://jrichter24.github.io/moldqueen/ · repo: https://github.com/jrichter24/moldqueen
 
-## Writing
+## Misc.
 A bilingual (English + German) section for essays, tutorials and case studies on
 optimization, photonics and engineering.
-- English index: https://jrichter24.github.io/en/writing/
-- German index: https://jrichter24.github.io/de/writing/
+- English index: https://jrichter24.github.io/en/misc/
+- German index: https://jrichter24.github.io/de/misc/
 
 ## Identity and links
 - Name: Dr. Jens Richter (Dr.-Ing.)
@@ -69,6 +69,7 @@ optimization, photonics and engineering.
 - Website: https://jrichter24.github.io
 - LinkedIn: https://www.linkedin.com/in/li-jens-richter/
 - GitHub: https://github.com/jrichter24
+- GitLab: https://gitlab.com/jrichter24
 - ResearchGate: https://www.researchgate.net/profile/Jens-Richter-3
 
 ## Site colophon

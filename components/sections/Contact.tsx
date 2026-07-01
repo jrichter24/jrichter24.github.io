@@ -28,6 +28,15 @@ export default function Contact() {
           {t('github')} ↗
         </a>
         <a
+          href={siteConfig.gitlab}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t('gitlabAria')}
+          className="label-mono border-2 border-red px-5 py-3 text-red hover:bg-red hover:text-paper"
+        >
+          {t('gitlab')} ↗
+        </a>
+        <a
           href={siteConfig.researchgate}
           target="_blank"
           rel="noopener noreferrer"

@@ -76,7 +76,7 @@ export default function Projects() {
                         href={lnk.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`${label} — ${name} (${newTab})`}
+                        aria-label={`${label}: ${name} (${newTab})`}
                         className="label-mono border-2 border-ink px-3 py-2 text-red hover:bg-red hover:text-paper"
                       >
                         {label} ↗

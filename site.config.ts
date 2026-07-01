@@ -7,6 +7,7 @@ export const siteConfig = {
   shortName: 'Jens Richter',
   github: 'https://github.com/jrichter24',
   githubUser: 'jrichter24',
+  gitlab: 'https://gitlab.com/jrichter24',
   linkedin: 'https://www.linkedin.com/in/li-jens-richter/',
   researchgate: 'https://www.researchgate.net/profile/Jens-Richter-3',
   employer: 'DNA Evolutions GmbH',

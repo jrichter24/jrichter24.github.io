@@ -9,7 +9,7 @@ Concept: _deliberately plain, secretly over-engineered._
 - **Square corners only** — `border-radius: 0` everywhere. Never use `rounded-*`.
 - **No blur** — no blur shadows/glows on UI. The only depth is a hard offset:
   `box-shadow: 3px 3px 0 var(--ink)`. (Raster images may be rich/shaded — CSS/UI only.)
-- **Four tokens only:** `--paper` `#FFFFFF`, `--ink` `#000000`, `--blue` = **work /
+- **Four tokens only:** `--paper` `#F5F6F6`, `--ink` `#000000`, `--blue` = **work /
   professional**, `--red` = **personal / creative projects**. Blue & red are
   _meaning-bearing accents_ (links, one emphasized word, small markers, keylines) —
   never large fills, no gradients, no fifth color.

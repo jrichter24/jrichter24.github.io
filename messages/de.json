@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "Dr. Jens Richter — Physiker, Entwickler, Ingenieur",
+    "titleDefault": "Dr. Jens Richter, Physiker, Entwickler, Ingenieur",
     "titleTemplate": "%s · Dr. Jens Richter",
-    "description": "Dr. Jens Richter — CEO von DNA Evolutions und Ingenieur mit den Händen im Code. Ich baue JOpt, eine Java-Engine zur Routenoptimierung, und mache aus chaotischer Logistik machbare, optimale Pläne. Promotion in Silizium-Photonik, RWTH Aachen."
+    "description": "Dr. Jens Richter, CEO von DNA Evolutions und Ingenieur mit den Händen im Code. Ich baue JOpt, eine Java-Engine zur Routenoptimierung, und mache aus chaotischer Logistik machbare, optimale Pläne. Promotion in Silizium-Photonik, RWTH Aachen."
   },
   "nav": {
     "brand": "Dr. Jens Richter",
@@ -13,7 +13,7 @@
     "research": "Forschung",
     "projects": "Projekte",
     "cv": "Lebenslauf",
-    "writing": "Blog",
+    "misc": "Misc.",
     "contact": "Kontakt",
     "skipToContent": "Zum Inhalt springen",
     "languageGroupAria": "Sprache",
@@ -29,21 +29,21 @@
     "doorsNavAria": "Bereiche",
     "doors": {
       "workLabel": "Arbeit",
-      "workAria": "Zur Arbeit — DNA Evolutions und die Optimierungs-Engine JOpt",
+      "workAria": "Zur Arbeit: DNA Evolutions und die Optimierungs-Engine JOpt",
       "projectsLabel": "Projekte",
-      "projectsAria": "Zu Projekten — eigene und kreative Arbeiten",
+      "projectsAria": "Zu Projekten: eigene und kreative Arbeiten",
       "aboutLabel": "Über mich",
-      "aboutAria": "Zu Über mich — vom Physiker zum Ingenieur"
+      "aboutAria": "Zu Über mich: vom Physiker zum Ingenieur"
     }
   },
   "about": {
     "eyebrow": "// über mich",
     "title": "Über mich",
-    "p1": "Ich bin geboren in Dresden. Aufgewachsen in Leverkusen. In Aachen habe ich Physik und Informatik studiert und in Elektrotechnik promoviert. Mein Thema: Licht, das in mikroskopisch kleinen Glasringen im Kreis läuft.",
+    "p1": "Ich bin in Dresden geboren. Aufgewachsen in Leverkusen. In Aachen habe ich Physik und Informatik studiert und in Elektrotechnik promoviert.",
     "nowLabel": "Jetzt",
     "now": "Ich lebe in Eschweiler bei Aachen, mit meiner Frau, meinem Sohn und unserem Hund.",
     "goalLabel": "Ziel",
-    "goal": "Möglichst viele spannende Probleme lösen, unter der Bedingung, dass am Ende etwas Fertiges dabei rauskommt."
+    "goal": "Möglichst viele spannende Probleme lösen, unter der Bedingung, dass am Ende etwas Brauchbares dabei rauskommt."
   },
   "work": {
     "eyebrow": "// jetzt / arbeit",
@@ -55,21 +55,26 @@
     "companyAria": "DNA Evolutions (öffnet in neuem Tab)",
     "githubLabel": "GitHub",
     "githubAria": "DNA Evolutions auf GitHub (öffnet in neuem Tab)",
-    "capabilitiesLabel": "Was sie kann",
+    "capabilitiesLabel": "Themen",
     "capabilities": [
       "Vehicle Routing",
       "Zeitfenster",
       "Qualifikationen & Constraints",
       "Mehrtagesplanung",
       "natives Java",
-      "Spring WebFlux REST"
+      "Spring WebFlux REST",
+      "Optimierung",
+      "Quantum Computing",
+      "AI",
+      "Machine Learning",
+      "Workforce Scheduling"
     ]
   },
   "research": {
     "eyebrow": "// forschung",
     "title": "Forschung",
-    "lead": "Promotion — Dr.-Ing. in Elektrotechnik, RWTH Aachen, 2018.",
-    "plain": "Verständlich gesagt: Ich habe winzige Glasringe auf einem Silizium-Chip gebaut, die Licht einfangen und es millionenfach im Kreis laufen lassen — die Grundlage für sehr präzise optische Messungen und für optische Frequenzkämme, im Grunde Lineale aus Licht. Programmierung und Quantenphysik waren dabei meine täglichen Begleiter.",
+    "lead": "Promotion: Dr.-Ing. in Elektrotechnik, RWTH Aachen, 2018.",
+    "plain": "Verständlich gesagt: Ich habe winzige Glasringe auf einem Silizium-Chip gebaut, die Licht einfangen und es millionenfach im Kreis laufen lassen. Dies ist die Grundlage für sehr präzise optische Messungen und für optische Frequenzkämme, im Grunde Lineale aus Licht. Programmierung und Quantenphysik waren dabei meine täglichen Begleiter.",
     "thesisLabelText": "Dissertation",
     "thesisTitle": "Ultra-high-Q inverted silica microtoroid resonators monolithically integrated into a silicon photonics platform.",
     "recordLink": "Offizieller Eintrag",
@@ -80,7 +85,11 @@
       "Silizium-Photonik",
       "Ultra-high-Q-Mikroresonatoren",
       "optische Frequenzkämme",
-      "optische Charakterisierung"
+      "optische Charakterisierung",
+      "Cleanroom",
+      "SEIRA",
+      "Dark Field",
+      "FTIR"
     ]
   },
   "projects": {
@@ -135,7 +144,7 @@
     ],
     "education": [
       { "qualification": "Dr.-Ing., Elektrotechnik", "org": "RWTH", "period": "2018" },
-      { "qualification": "Diplom, Physik", "org": "RWTH", "period": "—" }
+      { "qualification": "Diplom, Physik", "org": "RWTH", "period": "" }
     ],
     "legend": "* DNA = DNA Evolutions GmbH · RWTH = RWTH Aachen University",
     "curlIntro": "Oder, für die Terminal-Fraktion:",
@@ -144,22 +153,24 @@
   "contact": {
     "eyebrow": "// kontakt",
     "title": "Kontakt",
-    "lead": "Kein Formular, keine E-Mail-Sammelei. Nur echte Links.",
+    "lead": "Kein Formular, keine E-Mail-Sammelei.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
+    "gitlab": "GitLab",
     "researchgate": "ResearchGate",
     "linkedinAria": "Jens Richter auf LinkedIn (öffnet in neuem Tab)",
     "githubAria": "Jens Richter auf GitHub (öffnet in neuem Tab)",
+    "gitlabAria": "Jens Richter auf GitLab (öffnet in neuem Tab)",
     "researchgateAria": "Jens Richter auf ResearchGate (öffnet in neuem Tab)"
   },
-  "writing": {
-    "eyebrow": "// blog",
-    "title": "Blog",
-    "intro": "Notizen zu Optimierung, Photonik und dem Bauen von Dingen. Gelegentlich ein Tutorial.",
+  "misc": {
+    "eyebrow": "// misc",
+    "title": "Misc.",
+    "intro": "Notizen zu Optimierung und dem Bauen von Dingen. Vielleicht ein Tutorial.",
     "readPost": "Lesen",
     "backToList": "Alle Beiträge",
     "rss": "RSS",
-    "rssTitle": "Dr. Jens Richter — Blog",
+    "rssTitle": "Dr. Jens Richter · Misc.",
     "rssDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter.",
     "empty": "Noch keine Beiträge. Die Warteschlange ist im Geiste nicht leer.",
     "tagsLabel": "Themen",
@@ -168,12 +179,12 @@
       "essay": "Essay",
       "case-study": "Fallstudie"
     },
-    "metaTitle": "Blog",
-    "metaDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter — Optimierung, Photonik und Technik."
+    "metaTitle": "Misc.",
+    "metaDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter zu Optimierung und Technik."
   },
   "footer": {
-    "joke": "Keine Cookies. Keine Tracker. Kein Newsletter. Nur HTML, das sich benimmt.",
-    "sourceNote": "// psst — der Quelltext ist kommentiert. Schau rein.",
+    "joke": "Keine Cookies. Keine Tracker. Kein Newsletter. Nur HTML.",
+    "sourceNote": "// Der Quelltext dieser Seite ist auf GitHub. Schau rein.",
     "meta": "Next.js · statisch exportiert · {year}",
     "humansLink": "humans.txt",
     "backToTop": "Nach oben",

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "titleDefault": "Dr. Jens Richter — Physicist, Developer, Engineer",
+    "titleDefault": "Dr. Jens Richter (PhD), Physicist, Developer, Engineer",
     "titleTemplate": "%s · Dr. Jens Richter",
-    "description": "Dr. Jens Richter — CEO of DNA Evolutions and a hands-on engineer. I build JOpt, a Java route-optimization engine, turning messy real-world logistics into feasible, optimal plans. PhD in silicon photonics, RWTH Aachen."
+    "description": "Dr. Jens Richter, CEO of DNA Evolutions and a hands-on engineer. I build JOpt, a Java route-optimization engine, turning messy real-world logistics into feasible, optimal plans. PhD in silicon photonics, RWTH Aachen."
   },
   "nav": {
     "brand": "Dr. Jens Richter",
@@ -13,7 +13,7 @@
     "research": "Research",
     "projects": "Projects",
     "cv": "CV",
-    "writing": "Writing",
+    "misc": "Misc.",
     "contact": "Contact",
     "skipToContent": "Skip to content",
     "languageGroupAria": "Language",
@@ -29,58 +29,67 @@
     "doorsNavAria": "Sections",
     "doors": {
       "workLabel": "Work",
-      "workAria": "Go to Work — DNA Evolutions and the JOpt optimization engine",
+      "workAria": "Go to Work: DNA Evolutions and the JOpt optimization engine",
       "projectsLabel": "Projects",
-      "projectsAria": "Go to Projects — personal and creative work",
+      "projectsAria": "Go to Projects: personal and creative work",
       "aboutLabel": "About",
-      "aboutAria": "Go to About — the physicist-to-engineer story"
+      "aboutAria": "Go to About: the physicist-to-engineer story"
     }
   },
   "about": {
     "eyebrow": "// about",
     "title": "About",
-    "p1": "Born in Dresden. Raised in Leverkusen. In Aachen I studied physics and computer science, then earned a doctorate in electrical engineering. My subject: light running in circles inside microscopic glass rings.",
+    "p1": "Born in Dresden. Raised in Leverkusen. In Aachen I studied physics and computer science, then earned a doctorate (PhD) in electrical engineering.",
     "nowLabel": "Now",
     "now": "I live in Eschweiler near Aachen, with my wife, my son, and our dog.",
     "goalLabel": "Goal",
-    "goal": "Solve as many interesting problems as possible — subject to the constraint that something finished comes out at the end."
+    "goal": "Solve as many interesting problems as possible, subject to the constraint that something usable comes out at the end."
   },
   "work": {
     "eyebrow": "// now / work",
     "title": "Now / Work",
-    "lead": "I'm CEO of DNA Evolutions — and still work with source code.",
-    "body": "We build JOpt, a route and tour optimization engine written in Java. It turns chaotic real-world logistics — vehicles, drivers, time windows, skills, hard constraints, multi-day planning — into feasible, optimal tours. Available natively in Java and as a Spring WebFlux REST service.",
+    "lead": "I'm CEO of DNA Evolutions, and still work with source code.",
+    "body": "We build JOpt, a route and tour optimization engine written in Java. It turns chaotic real-world logistics (vehicles, drivers, time windows, skills, hard constraints, multi-day planning) into feasible, optimal tours. Available natively in Java and as a Spring WebFlux REST service.",
     "aside": "Something has to decide who drives where and when, without breaking the rules. That something is a solver. And I build it.",
     "companyLink": "DNA Evolutions",
     "companyAria": "DNA Evolutions (opens in a new tab)",
     "githubLabel": "GitHub",
     "githubAria": "DNA Evolutions on GitHub (opens in a new tab)",
-    "capabilitiesLabel": "What it handles",
+    "capabilitiesLabel": "Topics",
     "capabilities": [
       "vehicle routing",
       "time windows",
       "skills & constraints",
       "multi-day planning",
       "native Java",
-      "Spring WebFlux REST"
+      "Spring WebFlux REST",
+      "optimization",
+      "quantum computing",
+      "AI",
+      "machine learning",
+      "workforce scheduling"
     ]
   },
   "research": {
     "eyebrow": "// research",
     "title": "Research",
-    "lead": "Doctorate — Dr.-Ing. in Electrical Engineering, RWTH Aachen, 2018.",
-    "plain": "In plain terms: I built tiny glass rings on a silicon chip that trap light and let it loop millions of times — the basis for very precise optical measurements and for optical frequency combs, essentially rulers made of light. Programming and quantum physics were my daily companions.",
+    "lead": "Doctorate: Dr.-Ing. in Electrical Engineering, RWTH Aachen, 2018.",
+    "plain": "In plain terms: I built tiny glass rings on a silicon chip that trap light and let it loop millions of times. That's the basis for very precise optical measurements and for optical frequency combs, essentially rulers made of light. Programming and quantum physics were my daily companions.",
     "thesisLabelText": "Thesis",
     "thesisTitle": "Ultra-high-Q inverted silica microtoroid resonators monolithically integrated into a silicon photonics platform.",
     "recordLink": "Official record",
-    "recordAria": "Official record — RWTH Aachen thesis (opens in a new tab)",
+    "recordAria": "Official record: RWTH Aachen thesis (opens in a new tab)",
     "thesisLink": "PDF (13 MB)",
     "keywordsLabel": "Topics",
     "keywords": [
       "silicon photonics",
       "ultra-high-Q microresonators",
       "optical frequency combs",
-      "optical characterization"
+      "optical characterization",
+      "cleanroom",
+      "SEIRA",
+      "dark field",
+      "FTIR"
     ]
   },
   "projects": {
@@ -135,7 +144,7 @@
     ],
     "education": [
       { "qualification": "Dr.-Ing., Electrical Engineering", "org": "RWTH", "period": "2018" },
-      { "qualification": "Diplom, Physics", "org": "RWTH", "period": "—" }
+      { "qualification": "Diplom, Physics", "org": "RWTH", "period": "" }
     ],
     "legend": "* DNA = DNA Evolutions GmbH · RWTH = RWTH Aachen University",
     "curlIntro": "Or, for the terminal-inclined:",
@@ -144,22 +153,24 @@
   "contact": {
     "eyebrow": "// contact",
     "title": "Contact",
-    "lead": "No form, no email harvester. Real links only.",
+    "lead": "No form, no email harvester.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
+    "gitlab": "GitLab",
     "researchgate": "ResearchGate",
     "linkedinAria": "Jens Richter on LinkedIn (opens in a new tab)",
     "githubAria": "Jens Richter on GitHub (opens in a new tab)",
+    "gitlabAria": "Jens Richter on GitLab (opens in a new tab)",
     "researchgateAria": "Jens Richter on ResearchGate (opens in a new tab)"
   },
-  "writing": {
-    "eyebrow": "// writing",
-    "title": "Writing",
-    "intro": "Notes on optimization, photonics, and building things. Occasionally a tutorial.",
+  "misc": {
+    "eyebrow": "// misc",
+    "title": "Misc.",
+    "intro": "Notes on optimization and building things. Maybe a tutorial.",
     "readPost": "Read",
     "backToList": "All posts",
     "rss": "RSS",
-    "rssTitle": "Dr. Jens Richter — Writing",
+    "rssTitle": "Dr. Jens Richter · Misc.",
     "rssDescription": "Essays, tutorials and case studies by Dr. Jens Richter.",
     "empty": "No posts yet. The queue is non-empty in spirit.",
     "tagsLabel": "Tags",
@@ -168,12 +179,12 @@
       "essay": "Essay",
       "case-study": "Case study"
     },
-    "metaTitle": "Writing",
-    "metaDescription": "Essays, tutorials and case studies by Dr. Jens Richter — optimization, photonics, and engineering."
+    "metaTitle": "Misc.",
+    "metaDescription": "Essays, tutorials and case studies by Dr. Jens Richter on optimization and engineering."
   },
   "footer": {
-    "joke": "No cookies. No trackers. No newsletter. Just HTML that behaves.",
-    "sourceNote": "// psst — the source is commented. View it.",
+    "joke": "No cookies. No trackers. No newsletter. Just HTML.",
+    "sourceNote": "// This page's source is on GitHub. Take a look.",
     "meta": "Next.js · statically exported · {year}",
     "humansLink": "humans.txt",
     "backToTop": "Back to top",

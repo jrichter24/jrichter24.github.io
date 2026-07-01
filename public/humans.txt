@@ -6,11 +6,11 @@
   Code:     https://github.com/jrichter24
 
 /* WORK */
-  DNA Evolutions GmbH — JOpt, a Java route/tour optimization engine.
+  DNA Evolutions GmbH: JOpt, a Java route/tour optimization engine.
   Turns messy real-world logistics into feasible, optimal plans.
 
 /* PAST LIVES */
-  PhD (Dr.-Ing.), RWTH Aachen, 2018 — silicon photonics,
+  PhD (Dr.-Ing.), RWTH Aachen, 2018: silicon photonics,
   ultra-high-Q microresonators, and making light go in circles.
 
 /* SITE */
