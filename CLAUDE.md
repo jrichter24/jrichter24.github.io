@@ -32,3 +32,15 @@ Concept: _deliberately plain, secretly over-engineered._
   `post-composer`, `shipping-inspector`, `site-auditor`.
 - Load the relevant skill before working an area; run the matching agent before
   committing changes that touch its domain.
+
+## Git identity (hard rule)
+
+- Every commit and push MUST use exactly this identity — no exceptions:
+  `jensrichter <jensrichter24@googlemail.com>`.
+- NEVER add Claude, Anthropic, or any AI as author, committer, or co-author.
+  Do NOT append `Co-Authored-By:` trailers or "Generated with …" lines to
+  commit messages. Commit messages contain the change only.
+- NEVER change `user.name` / `user.email` to anything other than the identity
+  above, and never modify global git config.
+- Before committing, verify `git config user.email` == the address above. If it
+  doesn't match, STOP and tell the user instead of committing.

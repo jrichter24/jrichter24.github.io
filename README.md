@@ -1,106 +1,71 @@
-# jens.dev
+# jens richter — personal website
 
-Personal site for **Dr. Jens Richter** — _A Physicist in Mind, Developer by
-Heart, Engineer by Passion._
+Source for **https://jrichter24.github.io** — a bilingual (DE/EN), statically
+exported personal site. Deliberately plain; secretly over-engineered.
 
-Concept: **deliberately plain, secretly over-engineered.** A page that looks like
-a busy person threw a document online, that quietly signals a real engineer built
-it — perfect semantic HTML, bilingual, statically exported, ~100 Lighthouse.
+Black, white, one blue, one red. Hard squares, almost no shadow. It looks basic
+because looking basic is the hard part.
 
-## Stack
+## // stack
 
-- **Next.js** (App Router) + **TypeScript**, statically exported (`output: 'export'`) — no server runtime.
-- **Tailwind CSS v4**, CSS-first (design system in [`app/globals.css`](app/globals.css) via `@theme`; no `tailwind.config.js`).
-- **next-intl** — path-based locales (`/de`, `/en`), full DE + EN parity.
-- **MDX** posts (`next-mdx-remote`) for `/writing`, with per-locale RSS and per-post OG images.
-- Structured data (JSON-LD), `sitemap.ts`, `robots.ts`, `llms.txt` for SEO + answer engines.
+Next.js (App Router, static export) · TypeScript · Tailwind CSS v4 · next-intl
+(DE/EN). No server, no runtime — it builds to plain files and ships to GitHub
+Pages.
 
-Requires **Node 20+**.
+## // .claude
 
-## Develop
+This repo also carries the tooling that built it. `.claude/` holds a small set of
+Claude Code **agents** and **skills**:
 
-```bash
+- `design-guardian` — enforces the visual rules (squares, no blur, four tokens).
+- `i18n-sync` — keeps the German and English catalogs at exact parity.
+- `voice-writer` / `post-composer` — write copy and posts in one consistent voice.
+- `site-auditor` — holistic review + backlog.
+- `shipping-inspector` — the release gate (a11y, performance, SEO/LLM).
+- skills: `design-system`, `i18n-conventions`, `mdx-post`, `seo-llm`,
+  `static-deploy`, and a `brand-voice` **template** (the real facts stay local).
+
+They're part of what's open here. Reuse them.
+
+## // use it as a template
+
+The structure is MIT; the content is not. To make it yours:
+
+1. Clone the repo.
+2. Copy `.claude/skills/brand-voice/SKILL.example.md` to `SKILL.md` and fill in
+   your own facts.
+3. Replace the images, PDFs, and copy with your own.
+4. Set `NEXT_PUBLIC_SITE_URL` to your domain.
+
+See `NOTICE` for exactly what you may and may not reuse.
+
+## // develop
+
+```
 npm install
-npm run dev        # http://localhost:3000/en  (and /de)
+npm run dev      # localhost:3000 — /en and /de
+npm run build    # static export → ./out
 ```
 
-The root `/` is a language splash; in dev, open `/en` or `/de` directly.
+Node 20+.
 
-## Build (static export)
+## // deploy
 
-```bash
-npm run build      # emits ./out — fully static
-```
+Pushing to `main` runs a GitHub Actions workflow that builds the static export
+and publishes it to GitHub Pages (root user site). One-time: set the Pages source
+to "GitHub Actions" in repo settings.
 
-Preview the export with any static server, e.g.:
+## // license
 
-```bash
-npx serve out
-```
+The website **structure** — source code, and the Claude Code agents and skill
+scaffolding — is MIT. See `LICENSE`.
 
-## Deploy
+The **content** is not: the images, illustrations, portrait, PDFs, and
+biographical copy are © Jens Richter, all rights reserved. See `NOTICE`.
 
-This repo auto-deploys to **GitHub Pages** as a user site served at the root —
-`https://jrichter24.github.io/` — via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
-on every push to `main` (it builds, `touch out/.nojekyll`, and publishes `./out`).
+Fork the structure. Bring your own everything else.
 
-`./out` is also plain static files — drop it on any bucket, Vercel (static), or
-Netlify. A `.nojekyll` file is included so hosts serve `_next/`.
+## // coffee
 
-> OG images are emitted by Next as extension-less files (e.g. `out/en/opengraph-image`,
-> valid PNG bytes). Vercel/Next and most CDNs serve these as `image/png`; on a bare
-> bucket you may need a MIME rule mapping those paths to `image/png`.
-
-Two build-time environment variables:
-
-| Variable                | When to set it                                                    | Example            |
-| ----------------------- | ----------------------------------------------------------------- | ------------------ |
-| `NEXT_PUBLIC_SITE_URL`  | Production origin (canonical URLs, OG, sitemap, JSON-LD).         | `https://jrichter24.github.io` |
-| `NEXT_PUBLIC_BASE_PATH` | Only for a GitHub Pages **project** site served under a sub-path. | `/my-repo`         |
-
-```bash
-# GitHub Pages project site example:
-NEXT_PUBLIC_SITE_URL=https://user.github.io/my-repo NEXT_PUBLIC_BASE_PATH=/my-repo npm run build
-```
-
-> The default site URL is `https://jrichter24.github.io` (the Pages workflow sets `NEXT_PUBLIC_SITE_URL` explicitly). Override it only to deploy under a different origin.
-
-## Project structure
-
-```
-app/[locale]/            # localized routes (layout owns <html lang>, header, footer, JSON-LD)
-  page.tsx               # home: hero + all sections
-  writing/               # posts index, [slug] post, rss.xml, per-post OG image
-  opengraph-image.tsx    # default OG image
-app/not-found.tsx        # bilingual custom 404  → out/404.html
-app/sitemap.ts, robots.ts
-components/               # Header, Footer, Hero, Section, sections/*, mdx/*, writing/*
-content/writing/<slug>/  # en.mdx + de.mdx per post
-messages/{de,en}.json    # every user-facing string; 1:1 key parity
-i18n/                    # locale list + next-intl request config
-lib/                     # posts, structured-data, og-image, format
-public/                  # hero assets, PDFs, humans.txt, llms.txt, cv.txt, index.html splash
-```
-
-## Conventions (see `CLAUDE.md` and the `.claude/skills`)
-
-- **Design laws:** square corners only, no blur shadows on UI, four color tokens
-  (`--paper`, `--ink`, `--blue` = work, `--red` = personal projects).
-- **i18n:** every user-facing string is a next-intl key; DE + EN keep 1:1 parity.
-- **Facts:** never invented — sourced from the `brand-voice` skill or flagged `TODO`.
-
-## Add a blog post
-
-1. `content/writing/<slug>/en.mdx` and `.../de.mdx` (parallel front-matter — see the `mdx-post` skill).
-2. Set `draft: false`. It appears in the index, RSS, sitemap, and gets an OG image automatically.
-
-## Add a locale
-
-Add the code to [`i18n/routing.ts`](i18n/routing.ts), create `messages/<code>.json`
-with the full key set, and add it to the language toggle. Nothing else changes.
-
-## Regenerate hero assets
-
-```bash
-node scripts/optimize-hero.mjs temp_assets/me_abstract_areas.png
-```
+If this saved you an afternoon, you can put a coffee toward the next one:
+https://ko-fi.com/A437HBY
