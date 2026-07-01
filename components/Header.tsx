@@ -12,7 +12,7 @@ export default function Header() {
     { href: `${base}/#work`, label: t('work') },
     { href: `${base}/#research`, label: t('research') },
     { href: `${base}/#projects`, label: t('projects') },
-    { href: `${base}/writing`, label: t('writing') },
+    { href: `${base}/misc`, label: t('misc') },
     { href: `${base}/#cv`, label: t('cv') },
     { href: `${base}/#contact`, label: t('contact') },
   ];

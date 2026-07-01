@@ -1,5 +1,5 @@
 // Figure for posts. NOTE: in a static export, use an absolute public path for
-// `src` (e.g. /writing/<slug>/diagram.png). A relative-to-post-folder image
+// `src` (e.g. /misc/<slug>/diagram.png). A relative-to-post-folder image
 // pipeline can be added when real posts (with images) arrive.
 export function Figure({
   src,

@@ -20,9 +20,9 @@ function esc(s: string): string {
 export async function GET(_req: Request, { params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const loc = isLocale(locale) ? locale : defaultLocale;
-  const t = await getTranslations({ locale: loc, namespace: 'writing' });
+  const t = await getTranslations({ locale: loc, namespace: 'misc' });
   const posts = getAllPosts(loc);
-  const base = `${siteConfig.url}/${loc}/writing`;
+  const base = `${siteConfig.url}/${loc}/misc`;
 
   const items = posts
     .map((p) => {

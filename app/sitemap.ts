@@ -23,12 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   };
 
   push((l) => `/${l}/`, now, 1);
-  push((l) => `/${l}/writing/`, now, 0.7);
+  push((l) => `/${l}/misc/`, now, 0.7);
 
   for (const slug of getPostSlugs()) {
     const meta = getPostMeta(slug, locales[0]) ?? getPostMeta(slug, locales[1]);
     const date = meta?.date ? new Date(meta.date) : now;
-    push((l) => `/${l}/writing/${slug}/`, date, 0.6);
+    push((l) => `/${l}/misc/${slug}/`, date, 0.6);
   }
 
   return entries;

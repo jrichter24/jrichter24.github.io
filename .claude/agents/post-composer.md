@@ -47,7 +47,7 @@ Pick ONE based on the material and adapt the structure. If it's ambiguous, ask.
    image that needs a caption. If an image is decorative, mark it `alt=""`.
 2. **Outline first.** Produce a short outline and, for anything non-trivial,
    confirm it before writing the full draft. This keeps the draft on-target.
-3. **Write the source-language draft** as MDX for the site's blog/writing route
+3. **Write the source-language draft** as MDX for the site's /misc route
    (front-matter: `title`, `date`, `lang`, `slug`, `tags`, `summary`, `cover`).
    Use semantic headings in order (one H1 = the title), short paragraphs, and
    the site's components — never inline styles.

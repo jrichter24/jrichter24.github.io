@@ -28,16 +28,16 @@ export async function generateMetadata({
     title: meta.title,
     description: meta.summary,
     alternates: {
-      canonical: `/${loc}/writing/${slug}/`,
+      canonical: `/${loc}/misc/${slug}/`,
       languages: {
-        de: `/de/writing/${slug}/`,
-        en: `/en/writing/${slug}/`,
-        'x-default': `/en/writing/${slug}/`,
+        de: `/de/misc/${slug}/`,
+        en: `/en/misc/${slug}/`,
+        'x-default': `/en/misc/${slug}/`,
       },
     },
     openGraph: {
       type: 'article',
-      url: `/${loc}/writing/${slug}/`,
+      url: `/${loc}/misc/${slug}/`,
       title: meta.title,
       description: meta.summary,
       publishedTime: meta.date,
@@ -71,16 +71,16 @@ export default async function PostPage({
   const post = getPost(slug, loc);
   if (!post) notFound();
 
-  const t = await getTranslations({ locale: loc, namespace: 'writing' });
+  const t = await getTranslations({ locale: loc, namespace: 'misc' });
   const tnav = await getTranslations({ locale: loc, namespace: 'nav' });
   const { content } = await compileMDX({ source: post.content, components: mdxComponents });
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
       <JsonLd data={articleLd(post.meta, loc)} />
-      <JsonLd data={breadcrumbLd(post.meta, loc, { home: tnav('home'), writing: t('title') })} />
+      <JsonLd data={breadcrumbLd(post.meta, loc, { home: tnav('home'), misc: t('title') })} />
 
-      <Link href={`/${loc}/writing`} className="label-mono text-ink/60 hover:text-blue">
+      <Link href={`/${loc}/misc`} className="label-mono text-ink/60 hover:text-blue">
         ← {t('backToList')}
       </Link>
 

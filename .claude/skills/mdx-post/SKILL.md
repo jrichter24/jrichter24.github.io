@@ -1,6 +1,6 @@
 ---
 name: mdx-post
-description: The recipe for authoring a post (tutorial, essay, or project case study) as MDX in the /writing section — file layout, front-matter schema, components, image/alt, code blocks, OG images and RSS. Use when creating or editing a post.
+description: The recipe for authoring a post (tutorial, essay, or project case study) as MDX in the /misc section — file layout, front-matter schema, components, image/alt, code blocks, OG images and RSS. Use when creating or editing a post.
 allowed-tools: Read, Grep, Glob, Edit, Write
 ---
 
@@ -52,6 +52,6 @@ draft: false
 ## Per-post extras
 
 - OG image generated per post/locale from `title` + `cover`.
-- RSS feed per locale at `/<locale>/writing/rss.xml`, newest first, includes
+- RSS feed per locale at `/<locale>/misc/rss.xml`, newest first, includes
   `title`, `summary`, `date`, canonical link.
 - Index page lists posts newest-first with title + date + summary.

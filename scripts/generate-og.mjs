@@ -128,7 +128,7 @@ for (const slug of slugs) {
     jobs.push({
       file: `${slug}-${l}.png`,
       el: Card({
-        eyebrow: `${messages[l].writing.title} · Dr. Jens Richter`,
+        eyebrow: `${messages[l].misc.title} · Dr. Jens Richter`,
         title: String(data.title ?? slug),
         subtitle: String(data.summary ?? ''),
       }),

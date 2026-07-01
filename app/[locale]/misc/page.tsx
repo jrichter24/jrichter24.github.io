@@ -15,17 +15,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'writing' });
+  const t = await getTranslations({ locale, namespace: 'misc' });
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
     alternates: {
-      canonical: `/${locale}/writing/`,
-      languages: { de: '/de/writing/', en: '/en/writing/', 'x-default': '/en/writing/' },
+      canonical: `/${locale}/misc/`,
+      languages: { de: '/de/misc/', en: '/en/misc/', 'x-default': '/en/misc/' },
     },
     openGraph: {
       type: 'website',
-      url: `/${locale}/writing/`,
+      url: `/${locale}/misc/`,
       title: t('metaTitle'),
       description: t('metaDescription'),
       images: [
@@ -40,7 +40,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function WritingPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function MiscPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const loc = isLocale(locale) ? locale : defaultLocale;
   setRequestLocale(loc);

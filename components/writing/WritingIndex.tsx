@@ -5,7 +5,7 @@ import type { Locale } from '@/i18n/routing';
 import { formatDate } from '@/lib/format';
 
 export default function WritingIndex({ posts, locale }: { posts: PostMeta[]; locale: Locale }) {
-  const t = useTranslations('writing');
+  const t = useTranslations('misc');
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
@@ -13,7 +13,7 @@ export default function WritingIndex({ posts, locale }: { posts: PostMeta[]; loc
       <div className="flex flex-wrap items-center justify-between gap-4">
         <h1 className="text-4xl font-bold uppercase tracking-tight sm:text-5xl">{t('title')}</h1>
         <a
-          href={`/${locale}/writing/rss.xml`}
+          href={`/${locale}/misc/rss.xml`}
           className="label-mono border-2 border-ink px-3 py-2 hover:bg-ink hover:text-paper"
         >
           {t('rss')} ↗
@@ -27,7 +27,7 @@ export default function WritingIndex({ posts, locale }: { posts: PostMeta[]; loc
         <ul className="mt-12 divide-y divide-ink border-y border-ink">
           {posts.map((p) => (
             <li key={p.slug} className="py-6">
-              <Link href={`/${locale}/writing/${p.slug}`} className="group block">
+              <Link href={`/${locale}/misc/${p.slug}`} className="group block">
                 <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 font-mono text-xs uppercase tracking-wider text-ink/60">
                   <time dateTime={p.date}>{formatDate(p.date, locale)}</time>
                   <span>{t(`types.${p.type}`)}</span>

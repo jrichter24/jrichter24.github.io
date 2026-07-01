@@ -14,7 +14,7 @@ export default function LocaleToggle() {
   const t = useTranslations('nav');
 
   function pathFor(locale: Locale) {
-    const segments = pathname.split('/'); // e.g. ['', 'en', 'writing', '']
+    const segments = pathname.split('/'); // e.g. ['', 'en', 'misc', '']
     if (segments.length > 1) segments[1] = locale;
     return segments.join('/') || '/';
   }
