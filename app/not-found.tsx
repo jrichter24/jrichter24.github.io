@@ -2,12 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import en from '@/messages/en.json';
 import de from '@/messages/de.json';
+import { fontVariables } from '@/app/fonts';
 import './globals.css';
 
-// Global 404 → out/404.html. It lives outside the [locale] tree, so Next wraps
-// it in a synthesized root <html> that carries no CSS. To stay on-brand and
-// robust we render a fragment (no nested <html>) and inline the critical styles.
-// Copy still comes from the message catalogs, so DE/EN parity holds.
+// Global 404 → out/404.html. It lives outside the [locale] tree, so the locale
+// shell can't apply (no locale matched) — it renders its own <html>/<body>. The
+// pass-through root layout (app/layout.tsx) exists only to satisfy Next's rule
+// that a root not-found has a root layout. Critical styles are inlined so the
+// page holds up even if the stylesheet link is dropped, and copy comes from the
+// message catalogs so DE/EN parity holds.
 export const metadata: Metadata = {
   title: '404 · Nicht gefunden / Not Found · Dr. Jens Richter',
   robots: { index: false, follow: false },
@@ -57,29 +60,31 @@ const css = `
 
 export default function NotFound() {
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: css }} />
-      <main className="nf-wrap">
-        <p className="nf-eyebrow">{en.notFound.status}</p>
+    <html lang="en" className={fontVariables}>
+      <body>
+        <style dangerouslySetInnerHTML={{ __html: css }} />
+        <main className="nf-wrap">
+          <p className="nf-eyebrow">{en.notFound.status}</p>
 
-        <section lang="en">
-          <h1 className="nf-h nf-h1">{en.notFound.title}</h1>
-          <p className="nf-p">{en.notFound.body}</p>
-          <Link className="nf-link" href="/en/">
-            {en.notFound.homeLink} →
-          </Link>
-        </section>
+          <section lang="en">
+            <h1 className="nf-h nf-h1">{en.notFound.title}</h1>
+            <p className="nf-p">{en.notFound.body}</p>
+            <Link className="nf-link" href="/en/">
+              {en.notFound.homeLink} →
+            </Link>
+          </section>
 
-        <hr className="nf-hr" />
+          <hr className="nf-hr" />
 
-        <section lang="de">
-          <h2 className="nf-h nf-h2">{de.notFound.title}</h2>
-          <p className="nf-p">{de.notFound.body}</p>
-          <Link className="nf-link" href="/de/">
-            {de.notFound.homeLink} →
-          </Link>
-        </section>
-      </main>
-    </>
+          <section lang="de">
+            <h2 className="nf-h nf-h2">{de.notFound.title}</h2>
+            <p className="nf-p">{de.notFound.body}</p>
+            <Link className="nf-link" href="/de/">
+              {de.notFound.homeLink} →
+            </Link>
+          </section>
+        </main>
+      </body>
+    </html>
   );
 }
