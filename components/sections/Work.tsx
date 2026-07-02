@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Section from '@/components/Section';
+import TopicsColumns from '@/components/TopicsColumns';
 import { siteConfig } from '@/site.config';
 
 export default function Work() {
@@ -8,7 +9,7 @@ export default function Work() {
 
   return (
     <Section id="work" eyebrow={t('eyebrow')} title={t('title')} accent="blue">
-      <div className="grid gap-10 lg:grid-cols-[2fr_1fr]">
+      <TopicsColumns label={t('capabilitiesLabel')} topics={capabilities}>
         <div className="max-w-[68ch] space-y-5 text-lg leading-relaxed">
           <p className="text-xl">{t('lead')}</p>
           <p>{t('body')}</p>
@@ -34,21 +35,7 @@ export default function Work() {
             </a>
           </div>
         </div>
-
-        <div>
-          <p className="label-mono mb-3 text-ink/60">{t('capabilitiesLabel')}</p>
-          <ul className="flex flex-wrap gap-2">
-            {capabilities.map((cap) => (
-              <li
-                key={cap}
-                className="border border-ink px-2.5 py-1 font-mono text-xs uppercase tracking-wide"
-              >
-                {cap}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      </TopicsColumns>
     </Section>
   );
 }
