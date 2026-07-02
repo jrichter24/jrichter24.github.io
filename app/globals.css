@@ -99,6 +99,39 @@
     box-shadow: 3px 3px 0 var(--color-ink);
   }
 
+  /* Hero schematic doors: an accent-framed label that inverts on hover/focus.
+     One inline SVG (aria-hidden) draws the broken frame + corner ticks + dot
+     ornaments; the localized label rides on top as real text. The frame/dots use
+     currentColor and the ink ticks use --door-tick, so a single hover rule flips
+     every part to paper over a solid accent fill. No blur, squares only, instant. */
+  .hero-door {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-paper);
+    color: var(--door-accent);
+    --door-tick: var(--color-ink);
+  }
+  .hero-door > svg {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+  .hero-door__label {
+    position: relative;
+    z-index: 1;
+  }
+  .hero-door:hover,
+  .hero-door:focus-visible {
+    background: var(--door-accent);
+    color: var(--color-paper);
+    --door-tick: var(--color-paper);
+  }
+
   /* Skip-link: visible only when focused. */
   .skip-link {
     position: absolute;
