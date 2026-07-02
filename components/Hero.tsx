@@ -110,10 +110,8 @@ export default function Hero() {
             <span aria-hidden className="inline-block h-2 w-2 bg-blue" />
             {t('status')}
           </p>
-          <h1 className="text-[clamp(1.9rem,5vw,3.5rem)] font-bold uppercase leading-[0.9] tracking-tight">
-            Dr. Jens
-            <br />
-            Richter
+          <h1 className="max-w-[7em] text-[clamp(1.9rem,5vw,3.5rem)] font-bold uppercase leading-[0.9] tracking-tight">
+            Dr. Jens Richter
           </h1>
           <p className="mt-3 max-w-[24ch] text-[clamp(0.85rem,1.4vw,1.05rem)] leading-snug">
             {t('tagline')}
