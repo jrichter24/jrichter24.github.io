@@ -75,7 +75,7 @@ export function thesisLd(locale: Locale) {
 
 /** Projects. jonas-barney.com is a self-published book; toPPT, JonasBarneyPaint
  *  and moldqueen are code (SoftwareSourceCode). */
-export function projectsLd() {
+export function projectsLd(locale: Locale) {
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -111,6 +111,15 @@ export function projectsLd() {
         description: 'Control building-block RC toys through one clean API.',
         url: siteConfig.projects.moldqueenSite,
         codeRepository: siteConfig.projects.moldqueen,
+        author: { '@id': `${siteConfig.url}/#person` },
+      },
+      {
+        '@type': 'SoftwareSourceCode',
+        name: 'jrichter24.github.io',
+        description:
+          locale === 'de' ? 'Der Quellcode dieser Seite.' : 'The source code of this site.',
+        inLanguage: locale,
+        codeRepository: siteConfig.projects.siteRepo,
         author: { '@id': `${siteConfig.url}/#person` },
       },
     ],

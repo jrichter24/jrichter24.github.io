@@ -56,6 +56,9 @@ constraint solving, Java, Spring WebFlux, REST APIs.
   source: https://github.com/jrichter24/miniPaint
 - **moldqueen**: control building-block RC toys through one clean API.
   https://jrichter24.github.io/moldqueen/ · repo: https://github.com/jrichter24/moldqueen
+- **jrichter24.github.io**: this site's own source. Open source, including the
+  Claude Code agents and skills that built it.
+  https://github.com/jrichter24/jrichter24.github.io
 
 ## Misc.
 A bilingual (English + German) section for essays, tutorials and case studies on

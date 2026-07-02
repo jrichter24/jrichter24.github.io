@@ -122,6 +122,11 @@
         "name": "moldqueen",
         "summary": "Control building-block RC toys through one clean API.",
         "meta": []
+      },
+      "siteRepo": {
+        "name": "jrichter24.github.io",
+        "summary": "The source code of this site.",
+        "meta": []
       }
     }
   },

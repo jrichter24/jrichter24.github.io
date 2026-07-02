@@ -23,5 +23,6 @@ export const siteConfig = {
     jonasBarneyPaintSource: 'https://github.com/jrichter24/miniPaint',
     moldqueen: 'https://github.com/jrichter24/moldqueen',
     moldqueenSite: 'https://jrichter24.github.io/moldqueen/',
+    siteRepo: 'https://github.com/jrichter24/jrichter24.github.io',
   },
 } as const;

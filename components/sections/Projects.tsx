@@ -1,11 +1,12 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Section from '@/components/Section';
 import { JsonLd } from '@/components/JsonLd';
 import { projectsLd } from '@/lib/structured-data';
 import { siteConfig } from '@/site.config';
+import type { Locale } from '@/i18n/routing';
 
 type LinkKind = 'github' | 'site' | 'fileExchange';
-type ItemKey = 'toppt' | 'jonasBarney' | 'jonasBarneyPaint' | 'moldqueen';
+type ItemKey = 'toppt' | 'jonasBarney' | 'jonasBarneyPaint' | 'moldqueen' | 'siteRepo';
 
 // All projects are personal → red (section-based accent). Each card can carry a
 // few links; aria-labels are composed so they contain the visible label (2.5.3).
@@ -35,15 +36,21 @@ const items: { key: ItemKey; links: { kind: LinkKind; href: string }[] }[] = [
       { kind: 'github', href: siteConfig.projects.moldqueen },
     ],
   },
+  // The meta one: this site's own source (GitHub only — a live link would be circular).
+  {
+    key: 'siteRepo',
+    links: [{ kind: 'github', href: siteConfig.projects.siteRepo }],
+  },
 ];
 
 export default function Projects() {
   const t = useTranslations('projects');
+  const locale = useLocale() as Locale;
   const newTab = t('newTab');
 
   return (
     <Section id="projects" eyebrow={t('eyebrow')} title={t('title')} accent="red">
-      <JsonLd data={projectsLd()} />
+      <JsonLd data={projectsLd(locale)} />
       <p className="mb-8 max-w-[68ch] text-lg text-ink/80">{t('intro')}</p>
 
       <ul className="divide-y divide-ink border-y border-ink">

@@ -31,6 +31,9 @@ optimal tours. He holds a PhD from RWTH Aachen in silicon photonics.
   source https://github.com/jrichter24/miniPaint
 - **moldqueen**: control building-block RC toys through one clean API:
   https://jrichter24.github.io/moldqueen/ · repo https://github.com/jrichter24/moldqueen
+- **jrichter24.github.io**: this site's own source, open source (including the
+  Claude Code agents and skills that built it):
+  https://github.com/jrichter24/jrichter24.github.io
 
 ## Misc.
 - English: https://jrichter24.github.io/en/misc/

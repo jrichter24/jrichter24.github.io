@@ -122,6 +122,11 @@
         "name": "moldqueen",
         "summary": "Steuert RC-Spielzeug aus Bausteinen über eine einzige, saubere API.",
         "meta": []
+      },
+      "siteRepo": {
+        "name": "jrichter24.github.io",
+        "summary": "Der Quellcode dieser Seite.",
+        "meta": []
       }
     }
   },
