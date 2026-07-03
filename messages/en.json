@@ -185,6 +185,11 @@
       "case-study": "Case study",
       "note": "Note"
     },
+    "accents": {
+      "work": "Work",
+      "personal": "Personal",
+      "none": "Uncategorized"
+    },
     "metaTitle": "Misc.",
     "metaDescription": "Essays, tutorials and case studies by Dr. Jens Richter on optimization and engineering."
   },

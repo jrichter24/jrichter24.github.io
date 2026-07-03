@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import type { PostMeta } from '@/lib/posts';
 import type { Locale } from '@/i18n/routing';
 import { formatDate } from '@/lib/format';
+import AccentMarker from '@/components/misc/AccentMarker';
 
 export default function MiscIndex({ posts, locale }: { posts: PostMeta[]; locale: Locale }) {
   const t = useTranslations('misc');
@@ -32,7 +33,10 @@ export default function MiscIndex({ posts, locale }: { posts: PostMeta[]; locale
                   <time dateTime={p.date}>{formatDate(p.date, locale)}</time>
                   <span>{t(`types.${p.type}`)}</span>
                 </div>
-                <h2 className="mt-2 text-2xl font-bold group-hover:text-blue">{p.title}</h2>
+                <h2 className="mt-2 text-2xl font-bold group-hover:text-blue">
+                  <AccentMarker accent={p.accent} className="mr-2.5 h-3 w-3 align-middle" />
+                  {p.title}
+                </h2>
                 <p className="mt-2 max-w-[68ch] text-ink/80">{p.summary}</p>
               </Link>
             </li>

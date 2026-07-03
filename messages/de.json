@@ -185,6 +185,11 @@
       "case-study": "Fallstudie",
       "note": "Notiz"
     },
+    "accents": {
+      "work": "Arbeit",
+      "personal": "Persönlich",
+      "none": "Ohne Kategorie"
+    },
     "metaTitle": "Misc.",
     "metaDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter zu Optimierung und Technik."
   },

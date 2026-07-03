@@ -7,12 +7,17 @@ const CONTENT_DIR = path.join(process.cwd(), 'content', 'misc');
 
 export type PostType = 'tutorial' | 'essay' | 'case-study' | 'note';
 
+// Work vs. personal signal, reusing the site's accent semantics (blue = work,
+// red = personal). `none` is the uncategorized default (hollow marker).
+export type PostAccent = 'work' | 'personal' | 'none';
+
 export interface PostMeta {
   slug: string;
   title: string;
   date: string; // ISO YYYY-MM-DD
   lang: Locale;
   type: PostType;
+  accent: PostAccent;
   tags: string[];
   summary: string;
   cover?: string;
@@ -46,6 +51,7 @@ function normalizeMeta(slug: string, locale: Locale, data: Record<string, any>):
     date: toIsoDate(data.date),
     lang: (data.lang ?? locale) as Locale,
     type: (data.type ?? 'essay') as PostType,
+    accent: data.accent === 'work' || data.accent === 'personal' ? data.accent : 'none',
     tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
     summary: String(data.summary ?? ''),
     cover: data.cover ? String(data.cover) : undefined,

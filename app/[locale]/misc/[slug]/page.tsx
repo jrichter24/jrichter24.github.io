@@ -6,6 +6,7 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { isLocale, defaultLocale } from '@/i18n/routing';
 import { getPost, getPostMeta, getPostSlugs } from '@/lib/posts';
 import { mdxComponents } from '@/components/mdx';
+import AccentMarker from '@/components/misc/AccentMarker';
 import { JsonLd } from '@/components/JsonLd';
 import { articleLd, breadcrumbLd } from '@/lib/structured-data';
 import { formatDate } from '@/lib/format';
@@ -85,6 +86,7 @@ export default async function PostPage({
       </Link>
 
       <div className="mt-6 flex flex-wrap items-baseline gap-x-4 gap-y-1 font-mono text-xs uppercase tracking-wider text-ink/60">
+        <AccentMarker accent={post.meta.accent} className="h-2.5 w-2.5 self-center" />
         <time dateTime={post.meta.date}>{formatDate(post.meta.date, loc)}</time>
         <span>{t(`types.${post.meta.type}`)}</span>
       </div>
