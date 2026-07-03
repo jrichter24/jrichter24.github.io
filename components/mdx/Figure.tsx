@@ -1,6 +1,7 @@
-// Figure for posts. NOTE: in a static export, use an absolute public path for
-// `src` (e.g. /misc/<slug>/diagram.png). A relative-to-post-folder image
-// pipeline can be added when real posts (with images) arrive.
+// Figure for posts. Images live in the post folder (content/misc/<slug>/) and
+// are synced to public/misc/<slug>/ by `scripts/sync-post-images.mjs` (prebuild).
+// Reference `src` by that post path, e.g. /misc/<slug>/diagram.webp — a
+// locale-agnostic absolute path that resolves the same from /en/... and /de/....
 export function Figure({
   src,
   alt = '',

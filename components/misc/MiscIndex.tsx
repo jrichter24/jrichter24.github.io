@@ -4,7 +4,7 @@ import type { PostMeta } from '@/lib/posts';
 import type { Locale } from '@/i18n/routing';
 import { formatDate } from '@/lib/format';
 
-export default function WritingIndex({ posts, locale }: { posts: PostMeta[]; locale: Locale }) {
+export default function MiscIndex({ posts, locale }: { posts: PostMeta[]; locale: Locale }) {
   const t = useTranslations('misc');
 
   return (

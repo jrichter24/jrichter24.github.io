@@ -3,9 +3,9 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import type { Locale } from '@/i18n/routing';
 
-const CONTENT_DIR = path.join(process.cwd(), 'content', 'writing');
+const CONTENT_DIR = path.join(process.cwd(), 'content', 'misc');
 
-export type PostType = 'tutorial' | 'essay' | 'case-study';
+export type PostType = 'tutorial' | 'essay' | 'case-study' | 'note';
 
 export interface PostMeta {
   slug: string;

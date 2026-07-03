@@ -11,6 +11,9 @@ next-env.d.ts
 # ─── generated OG images (built by `prebuild`, copied into ./out) ─
 /public/og/
 
+# ─── post images synced from content/misc/<slug>/ by `prebuild` ──
+/public/misc/
+
 # ─── testing / coverage ─────────────────────────────────────────
 /coverage
 

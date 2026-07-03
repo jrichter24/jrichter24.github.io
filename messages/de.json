@@ -182,7 +182,8 @@
     "types": {
       "tutorial": "Tutorial",
       "essay": "Essay",
-      "case-study": "Fallstudie"
+      "case-study": "Fallstudie",
+      "note": "Notiz"
     },
     "metaTitle": "Misc.",
     "metaDescription": "Essays, Tutorials und Fallstudien von Dr. Jens Richter zu Optimierung und Technik."

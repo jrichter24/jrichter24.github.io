@@ -113,7 +113,7 @@ for (const l of locales) {
 }
 
 // One image per post per locale
-const contentDir = path.join(root, 'content/writing');
+const contentDir = path.join(root, 'content/misc');
 const slugs = fs.existsSync(contentDir)
   ? fs
       .readdirSync(contentDir, { withFileTypes: true })

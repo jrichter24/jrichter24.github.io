@@ -5,7 +5,7 @@
   "description": "Personal site for Dr. Jens Richter — a Physicist in Mind, Developer by Heart, Engineer by Passion.",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-og.mjs",
+    "prebuild": "node scripts/sync-post-images.mjs && node scripts/generate-og.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

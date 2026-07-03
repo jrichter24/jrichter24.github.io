@@ -182,7 +182,8 @@
     "types": {
       "tutorial": "Tutorial",
       "essay": "Essay",
-      "case-study": "Case study"
+      "case-study": "Case study",
+      "note": "Note"
     },
     "metaTitle": "Misc.",
     "metaDescription": "Essays, tutorials and case studies by Dr. Jens Richter on optimization and engineering."

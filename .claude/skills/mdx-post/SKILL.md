@@ -9,8 +9,8 @@ and `i18n-conventions` skills for look, tone, and translation.
 
 ## Files
 
-- One folder per post: `content/writing/<slug>/`.
-- One MDX file per locale: `content/writing/<slug>/en.mdx`, `.../de.mdx`.
+- One folder per post: `content/misc/<slug>/`.
+- One MDX file per locale: `content/misc/<slug>/en.mdx`, `.../de.mdx`.
 - Locale files are **parallel**: same headings, same image slots, same
   front-matter keys; only prose/captions differ.
 
@@ -22,7 +22,7 @@ title: '…'
 slug: '…' # same across locales
 date: 2026-01-31 # ISO, same across locales
 lang: en # matches the file
-type: tutorial # tutorial | essay | case-study
+type: tutorial # tutorial | essay | case-study | note
 tags: [next.js, i18n]
 summary: '…' # 1–2 sentences, used in the index + meta description
 cover: './cover.png' # optional; drives the OG image

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { locales, isLocale, defaultLocale } from '@/i18n/routing';
 import { getAllPosts } from '@/lib/posts';
-import WritingIndex from '@/components/writing/WritingIndex';
+import MiscIndex from '@/components/misc/MiscIndex';
 import { siteConfig } from '@/site.config';
 
 export function generateStaticParams() {
@@ -45,5 +45,5 @@ export default async function MiscPage({ params }: { params: Promise<{ locale: s
   const loc = isLocale(locale) ? locale : defaultLocale;
   setRequestLocale(loc);
   const posts = getAllPosts(loc);
-  return <WritingIndex posts={posts} locale={loc} />;
+  return <MiscIndex posts={posts} locale={loc} />;
 }
