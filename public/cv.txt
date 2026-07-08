@@ -14,8 +14,9 @@ Senior Java Software Engineer   DNA Evolutions GmbH   2017-present
 PhD Researcher                  RWTH Aachen           2011-2017
 
 -- EDUCATION ----------------------------------------------------
-Dr.-Ing., Electrical Engineering   RWTH Aachen   2018
-Diplom, Physics                    RWTH Aachen
+PhD, Electrical Engineering   RWTH Aachen   2018
+M.Sc., Physics                RWTH Aachen
+German originals: PhD = Dr.-Ing., M.Sc. = Diplom
 
 -- RESEARCH -----------------------------------------------------
 Thesis: "Ultra-high-Q inverted silica microtoroid resonators

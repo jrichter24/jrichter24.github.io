@@ -148,10 +148,10 @@
       { "role": "PhD Researcher", "org": "RWTH", "period": "2011–2017" }
     ],
     "education": [
-      { "qualification": "Dr.-Ing., Electrical Engineering", "org": "RWTH", "period": "2018" },
-      { "qualification": "Diplom, Physics", "org": "RWTH", "period": "" }
+      { "qualification": "PhD, Electrical Engineering", "org": "RWTH", "period": "2018" },
+      { "qualification": "M.Sc., Physics", "org": "RWTH", "period": "" }
     ],
-    "legend": "* DNA = DNA Evolutions GmbH · RWTH = RWTH Aachen University",
+    "legend": "* DNA = DNA Evolutions GmbH · RWTH = RWTH Aachen University · German originals: PhD = Dr.-Ing., M.Sc. = Diplom",
     "curlIntro": "Or, for the terminal-inclined:",
     "curlNote": "// plain text, curl-friendly"
   },
